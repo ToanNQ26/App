@@ -1,0 +1,9 @@
+export const PAYMENT_STATUSES = [
+  "PENDING_ACCOUNTANT_CHECK",
+  "NEED_SUPPLEMENT",
+  "PENDING_CHAIRMAN_PAYMENT_APPROVAL",
+  "PAYMENT_REJECTED",
+  "DISBURSED",
+  "COMPLETED",
+] as const;
+export type PaymentStatus = (typeof PAYMENT_STATUSES)[number];
